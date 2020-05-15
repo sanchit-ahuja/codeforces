@@ -18,6 +18,7 @@ int main() {
         int n;
         cin>>n;
         vector<int>a(n,0);
+        //Sarthak's soln
         auto cmp = [](pair<int,int>a,pair<int,int>b) {
             int diff1 = a.second - a.first;
             int diff2 = b.second - b.first;
