@@ -14,7 +14,25 @@ using namespace std;
 #define pb push_back
 
 int main() {
-    
-    t    
+    tc(t) {
+        int n;
+        cin>>n;
+        cout<<2<<endl;
+        if(n == 2) {
+            cout<<1<<' '<<2<<endl;
+            continue;
+        }
+        cout<<n-2<<" "<<n<<endl;
+        cout<<n-1<<" "<<n-1<<endl;
+        int num = n-1;
+        n -=3;
+        // cout<<n<<endl;
+        if(n == 0) continue;
+        while(n > 0) {
+            cout<<num<<" "<<n<<endl;
+            num = (num+n)/2;
+            n-=1;
+        }
+    }
     return 0;
 }

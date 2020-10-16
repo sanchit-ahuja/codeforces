@@ -14,7 +14,24 @@ using namespace std;
 #define pb push_back
 
 int main() {
-    
-    t    
+    tc(t) {
+        string s;
+        cin>>s;
+        int cnt_0 = 0,cnt_1 = 0;
+        for(char x : s) {
+            if(x == '0') {
+                cnt_0+=1;
+            }
+            else {
+                cnt_1 += 1;
+            }
+        }
+        if(cnt_0 > cnt_1) {
+            cnt_0 = cnt_0/2;
+            if(cnt_0 > cnt_1) {
+                
+            }
+        }
+    }    
     return 0;
 }

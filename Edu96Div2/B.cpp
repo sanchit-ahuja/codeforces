@@ -14,7 +14,23 @@ using namespace std;
 #define pb push_back
 
 int main() {
-    
-    t    
+    tc(t) {
+        int n,k;
+        cin>>n>>k;
+        vector<ll>a(n);
+        loop(i,n) {
+            cin>>a[i];
+        }
+        sort(all(a));
+        // int i = 0,j = n-1;
+        for(int i = n-2;i>=0;i--){
+            if(a[i] == 0) continue;
+            if(k>0) {
+                a[n-1]+=a[i];
+                k--;
+            }
+        }
+        cout<<a[n-1]<<endl;
+    }
     return 0;
 }

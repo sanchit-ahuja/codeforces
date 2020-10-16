@@ -14,7 +14,17 @@ using namespace std;
 #define pb push_back
 
 int main() {
-    
-    t    
+    tc(t) {
+        int n;
+        string s(200,'a');
+        cout<<s<<endl;
+        cin>>n;
+        loop(i,n) {
+            int f;
+            cin>>f;
+            s[f] = s[f] == 'a' ? 'b' : 'a';
+            cout<<s<<endl;
+        }
+    }    
     return 0;
 }
